@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-Eg-nOq">
@@ -21,12 +21,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.13333333333333333" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lji-ft-PRs">
-                                <rect key="frame" x="86" y="350" width="243" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="KJZ-Ks-9GO"/>
-                                    <constraint firstAttribute="width" constant="243" id="wJk-fx-PIq"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lji-ft-PRs">
+                                <rect key="frame" x="39" y="207" width="242.5" height="66"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
                                 <color key="textColor" red="0.63137254899999995" green="0.21176470589999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -35,10 +31,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lji-ft-PRs" secondAttribute="bottom" constant="446" id="GfT-sP-rps"/>
-                            <constraint firstItem="lji-ft-PRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Z1F-7W-wpM"/>
-                            <constraint firstItem="lji-ft-PRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="306" id="oN6-Qd-4hP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lji-ft-PRs" secondAttribute="trailing" constant="85" id="tqF-N1-owz"/>
+                            <constraint firstItem="lji-ft-PRs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1vS-7Y-sVS"/>
+                            <constraint firstItem="lji-ft-PRs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="um4-kc-cdA"/>
                         </constraints>
                     </view>
                 </viewController>

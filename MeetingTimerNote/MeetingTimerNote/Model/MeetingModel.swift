@@ -27,7 +27,7 @@ struct MeetingInformation {
     let reserverName : String
     let date : String
     let details : String
-    let minutes : Int
-    let seconds : Int
+    var minutes : Int
+    var seconds : Int
 }
 

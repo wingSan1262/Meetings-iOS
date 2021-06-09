@@ -9,6 +9,7 @@ import UIKit
 
 class AdditionViewController: UIViewController {
 
+    // UI Components
     @IBOutlet weak var reserverName: UITextField!
     @IBOutlet weak var pickerRoom: UIPickerView!
     @IBOutlet weak var meetingName: UITextField!
@@ -30,12 +31,27 @@ class AdditionViewController: UIViewController {
     }
 
     @IBAction func addMeetingItem(_ sender: Any, forEvent event: UIEvent) {
+        // TODO -9999999 only temporary value to indicate user didnot enter correct time
+        if (((Int(self.minutes.text!) ?? -99999999) == -99999999) || ((Int(self.seconds.text!) ?? -99999999) == -99999999)) {
+            let alert = UIAlertController(
+                    title: "Wrong time input format",
+                    message: "Please input only in number and without space, please put zero if not needed.",
+                    preferredStyle: .alert
+                )
+             
+                alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+                    // do nothing dialog
+                })
+             
+                self.present(alert, animated: true)
+        } else {
+            let meetingItem =  MeetingInformation (room: meetingRoom!, meetingName: self.meetingName.text!, reserverName: self.reserverName.text!, date: self.dateDetails.text!, details: self.meetingDetails.text!, minutes: Int(self.minutes.text!) ?? 0, seconds: Int(self.seconds.text!) ?? 0)
+            
+            meetingsLists.append(meetingItem)
+            
+            self.navigationController?.popViewController(animated: true)
+        }
         
-        let meetingItem =  MeetingInformation (room: meetingRoom!, meetingName: self.meetingName.text!, reserverName: self.reserverName.text!, date: self.dateDetails.text!, details: self.meetingDetails.text!, minutes: Int(self.minutes.text!) ?? 0, seconds: Int(self.seconds.text!) ?? 0)
-        
-        meetingsLists.append(meetingItem)
-        
-        self.navigationController?.popViewController(animated: true)
     }
 }
 

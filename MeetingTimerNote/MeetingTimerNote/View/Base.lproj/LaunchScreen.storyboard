@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-Eg-nOq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-Eg-nOq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.13333333333333333" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lji-ft-PRs">
@@ -32,13 +31,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lji-ft-PRs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1vS-7Y-sVS"/>
+                            <constraint firstItem="kf4-Eg-nOq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ea-Zy-wi5"/>
+                            <constraint firstItem="kf4-Eg-nOq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PoA-oU-MNi"/>
                             <constraint firstItem="lji-ft-PRs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="um4-kc-cdA"/>
+                            <constraint firstItem="kf4-Eg-nOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vXX-jp-QEN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kf4-Eg-nOq" secondAttribute="bottom" id="wEy-2k-o03"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="50.625" y="375"/>
         </scene>
     </scenes>
     <resources>

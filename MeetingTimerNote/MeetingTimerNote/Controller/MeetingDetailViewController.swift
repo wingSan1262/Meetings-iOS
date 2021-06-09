@@ -85,7 +85,8 @@ class MeetingDetailViewController: UIViewController {
              secondsInString = "0" + String (seconds!)
         }
         
-        
+        meetingsLists[index!].minutes = self.minutes!
+        meetingsLists[index!].seconds = self.seconds!
         timeCounter.text = minutesInString + ":" + secondsInString
     
     }
